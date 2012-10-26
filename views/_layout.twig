@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>{% block title %}Troy McCabe{% endblock %}</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+
+        <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="/css/main.css" rel="stylesheet" type="text/css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="/js/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Troy McCabe</h1>
+        <div id="content-container">
+            <div id="content-wrapper">
+                <div id="links-container">
+                    <ul id="main-links">
+                        <li {% if app.request_uri is sameas('/') %}class="active"{% endif %}>
+                            <a href="/">Home</a>
+                        </li>
+                        <li {% if app.request_uri is sameas('/blog/') %}class="active"{% endif %}>
+                            <a href="/blog/">Blog</a>
+                        </li>
+                        <li {% if app.request_uri is sameas('/projects/') %}class="active"{% endif %}>
+                            <a href="/projects/">Projects</a>
+                        </li>
+                        <li {% if app.request_uri is sameas('/resume/') %}class="active"{% endif %}>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        <li {% if app.request_uri is sameas('/contact/') %}class="active"{% endif %}>
+                            <a href="/contact/">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="main-content-wrapper">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+            <div id="module-wrapper"></div>
+            <div class="clear"></div>
+            <div id="footer">
+
+            </div>
+        </div>
+    </body>
+</html>

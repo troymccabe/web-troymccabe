@@ -1,0 +1,86 @@
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    background: #333;
+}
+
+h1, h2, h3, h4, h5, h6, #main-links li {
+    font-family: Electrolize, monospace;
+}
+
+h1 {
+    color: #FFF;
+    margin: 50px auto 0;
+    width: 960px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#content-container {
+    background: #527F76;
+    border-radius: 3px;
+    box-shadow: 0 0 50px 75px #527F76;
+    margin: 0 auto 100px;
+    width: 960px;
+}
+
+#main-links {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding-left: 0;
+}
+
+#main-links li {
+    background: #999;
+    border-radius: 3px 3px 0 0;
+    display: inline-block;
+}
+
+#main-links li a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 35px;
+    height: 35px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+#main-links li:hover {
+    background: #CCC;
+}
+
+#main-links li.active, #main-links li.active:hover {
+    background: #FFF;
+}
+
+#main-links li.active a {
+    color: #000;
+}
+
+#content-wrapper {
+    float: left;
+}
+
+#main-content-wrapper {
+    background: #FFF;
+    border-radius: 0 3px 3px 3px;
+    padding: 10px;
+    width: 680px;
+}
+
+#module-wrapper {
+    background: transparent url(../images/social_container.png) no-repeat;
+    float: left;
+    height: 474px;
+    margin-left: 10px;
+    width: 250px;
+}
