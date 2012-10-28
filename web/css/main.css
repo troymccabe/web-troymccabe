@@ -29,13 +29,106 @@ a {
     clear: both;
 }
 
+/*
+Red:
+ bg: #8C2222
+ bs: #8E2323
+
+Green:
+ bg: #517D74
+ bs: #527F76
+
+Blue:
+ bg: #4580B1
+ bs: #4682B4
+
+Yellow:
+ bg: B2A441
+ bs: B5A642
+
+Orange:
+ bg: #FC6100
+ bs: #FF6300
+*/
 #content-container {
+    -moz-animation: fade 240s linear infinite;
+    -webkit-animation: fade 240s linear infinite;
+    animation: fade 240s linear infinite;
     background: #517D74;
     border-radius: 1px;
     box-shadow: 0 0 50px 75px #527F76;
     margin: 0 auto 100px;
     padding-top: 15px;
     width: 960px;
+}
+
+@-moz-keyframes fade {
+    0% {
+        background: #517D74;
+        box-shadow: 0 0 50px 75px #527F76;
+    }
+    25% {
+        background: #8C2222;
+        box-shadow: 0 0 50px 75px #8E2323;
+    }
+    50% {
+        background: #4580B1;
+        box-shadow: 0 0 50px 75px #4682B4;
+    }
+    75% {
+        background: #B2A441;
+        box-shadow: 0 0 50px 75px #B5A642;
+    }
+    100% {
+        background: #517D74;
+        box-shadow: 0 0 50px 75px #527F76;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        background: #517D74;
+        box-shadow: 0 0 50px 75px #527F76;
+    }
+    25% {
+        background: #8C2222;
+        box-shadow: 0 0 50px 75px #8E2323;
+    }
+    50% {
+        background: #4580B1;
+        box-shadow: 0 0 50px 75px #4682B4;
+    }
+    75% {
+        background: #B2A441;
+        box-shadow: 0 0 50px 75px #B5A642;
+    }
+    100% {
+        background: #517D74;
+        box-shadow: 0 0 50px 75px #527F76;
+    }
+}
+
+@keyframes fade {
+    0% {
+        background: #4580B1;
+        box-shadow: 0 0 50px 75px #4682B4;
+    }
+    25% {
+        background: #8C2222;
+        box-shadow: 0 0 50px 75px #8E2323;
+    }
+    50% {
+        background: #FC6100;
+        box-shadow: 0 0 50px 75px #FF6300;
+    }
+    75% {
+        background: #B2A441;
+        box-shadow: 0 0 50px 75px #B5A642;
+    }
+    100% {
+        background: #517D74;
+        box-shadow: 0 0 50px 75px #527F76;
+    }
 }
 
 #main-links {
@@ -96,6 +189,7 @@ a {
 
 #module-wrapper > div > div {
     background: #E8E8E8;
+    border-radius: 0 0 3px 3px;
     padding: 5px 10px;
 }
 
@@ -162,4 +256,16 @@ a {
 
 .jobs div:last-child {
     border-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+    #content-wrapper {
+        float: none;
+    }
+
+    #module-wrapper {
+        float: none;
+        margin-left: 0;
+        padding-top: 25px;
+    }
 }
