@@ -172,8 +172,11 @@ Orange:
 #main-content-wrapper {
     background: #E8E8E8;
     border-radius: 0 3px 3px 3px;
-    padding: 10px;
     width: 660px;
+}
+
+#main-content-wrapper > div {
+    padding: 10px;
 }
 
 #module-wrapper {
@@ -259,13 +262,34 @@ Orange:
 }
 
 @media screen and (max-width: 960px) {
+    h1 {
+        width: 100%;
+    }
+
+    #content-container {
+        width: 100%;
+    }
+
     #content-wrapper {
         float: none;
+        width: 100%;
+    }
+
+    #main-content-wrapper {
+        width: 100%;
     }
 
     #module-wrapper {
         float: none;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-links li {
+        display: block;
+        width: 100%;
     }
 }
