@@ -261,7 +261,7 @@ Orange:
     border-bottom: 0;
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     h1 {
         width: 100%;
     }
@@ -287,7 +287,7 @@ Orange:
     }
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
     #main-links li {
         display: block;
         width: 100%;
