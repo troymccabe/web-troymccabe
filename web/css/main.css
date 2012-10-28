@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, #main-links li {
 }
 
 h1 {
-    color: #FFF;
+    color: #E8E8E8;
     margin: 50px auto 0;
     width: 960px;
 }
@@ -20,21 +20,27 @@ h2 {
     margin-top: 0;
 }
 
+a {
+    color: #517D74;
+    text-decoration: none;
+}
+
 .clear {
     clear: both;
 }
 
 #content-container {
-    background: #527F76;
-    border-radius: 3px;
+    background: #517D74;
+    border-radius: 1px;
     box-shadow: 0 0 50px 75px #527F76;
     margin: 0 auto 100px;
+    padding-top: 15px;
     width: 960px;
 }
 
 #main-links {
     list-style: none;
-    margin: 15px 0 0 0;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -45,7 +51,7 @@ h2 {
 }
 
 #main-links li a {
-    color: #FFF;
+    color: #E8E8E8;
     display: inline-block;
     font-size: 1.1em;
     line-height: 35px;
@@ -55,11 +61,11 @@ h2 {
 }
 
 #main-links li:hover {
-    background: #CCC;
+    background: #AAA;
 }
 
 #main-links li.active, #main-links li.active:hover {
-    background: #FFF;
+    background: #E8E8E8;
 }
 
 #main-links li.active a {
@@ -71,16 +77,89 @@ h2 {
 }
 
 #main-content-wrapper {
-    background: #FFF;
+    background: #E8E8E8;
     border-radius: 0 3px 3px 3px;
     padding: 10px;
-    width: 680px;
+    width: 660px;
 }
 
 #module-wrapper {
-    background: transparent url(../images/social_container.png) no-repeat;
+    border-radius: 3px;
     float: left;
-    height: 474px;
+    margin-left: 25px;
+    width: 255px;
+}
+
+#module-wrapper > div {
+    margin-bottom: 25px;
+}
+
+#module-wrapper > div > div {
+    background: #E8E8E8;
+    padding: 5px 10px;
+}
+
+#module-wrapper div h2 {
+    background: #999;
+    border-radius: 3px 3px 0 0;
+    color: #FFF;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#lifestream-logo-wrapper {
+    /*border-bottom: 2px dashed #CCC;*/
+}
+
+#lifestream-logo-wrapper p {
+    margin: 0;
+}
+
+#lifestream-logo-wrapper p a {
+    /*opacity: .5;*/
+}
+
+#lifestream-logo-wrapper p input {
+    margin: 0 8px;
+}
+
+#lifestream-placeholder {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#professional-container div a:last-child {
     margin-left: 10px;
-    width: 250px;
+}
+
+#projects-container > div {
+    border-bottom: 3px dashed #CCC;
+    padding-bottom: 15px;
+}
+
+#projects-container > div:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+#projects-container > div > img {
+    float: left;
+    margin-right: 15px;
+}
+
+.store-links {
+    margin-top: 15px;
+    clear: both;
+}
+
+.jobs div {
+    border-bottom: 3px dashed #CCC;
+}
+
+.jobs div:last-child {
+    border-bottom: 0;
 }

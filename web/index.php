@@ -17,7 +17,14 @@ $pdo = new PDO("mysql:dbname={$_config['mysql']['db']};host={$_config['mysql']['
  * GET Routes
  */
 $app->get('/', function() use ($app) {
-    return $app['twig']->render('index.twig');
+    $date1 = new \DateTime('April 1, 1988');
+    $date2 = new \DateTime();
+    $diff = $date1->diff($date2);
+    return $app['twig']->render('index.twig', array('age' => $diff->format('%y')));
+});
+
+$app->get('/blog/', function() use ($app) {
+    return $app['twig']->render('blog.twig');
 });
 
 $app->get('/projects/', function() use ($app) {

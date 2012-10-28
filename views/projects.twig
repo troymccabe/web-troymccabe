@@ -3,5 +3,72 @@
 {% block title %}Troy McCabe | Projects{% endblock %}
 
 {% block content %}
-    <h2>Projects</h2>
+    <div id="projects-container">
+        <div>
+            <h3>Geek Squad Culture [Geek Squad]</h3>
+            <img src="/images/culture-logo.png">
+            <p>
+                Take a peek into the life of an agent.<br />
+                The culture app celebrates all things Geek Squad. It includes our history, what we stand for,
+                how we operate, and even a dictionary of our terms. Build upon and share your Geek Squad culture
+                if you’re already an agent, or get introduced to it if you’re not.
+            </p>
+            <p>
+                I developed both the Android and Windows Phone versions, as well as updated the iOS version when we
+                release V2.
+            </p>
+            <div class="clear"></div>
+            <div class="store-links">
+                <a href="https://play.google.com/store/apps/details?id=com.bestbuy.geeksquad.technicaltools.culture" target="_blank">
+                    <img alt="Android app on Google Play" src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                </a>
+                <a href="https://itunes.apple.com/us/app/geek-squad-culture/id522671240" target="_blank">
+                    <img alt="iOS app on App Store" src="/images/app-store-badge.svg" />
+                </a>
+                <a href="http://www.windowsphone.com/en-us/store/app/geek-squad-culture/326228ab-2965-493d-af5f-10f595572445" target="_blank">
+                    <img alt="Windows Phone app on Windows Store" src="/images/win-store-badge.png" />
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3>Turning Point [Dydro]</h3>
+            <img src="/images/tp-logo.png">
+            <p>
+                Turning Point is an application that allows you to manage your Pivotal Tracker account on the go! Also,
+                projects and stories are stored locally, so even when you don't have network, you can view all the things
+                you have to do!
+            </p>
+            <p>
+                I closely analyzed the behavior of <a href="http://pivotaltracker.com" target="_blank">Pivotal Tracker</a>
+                and attempted to replicate it in a native fashion.
+            </p>
+            <div class="clear"></div>
+            <div class="store-links">
+                <a href="http://play.google.com/store/apps/details?id=com.dydro.turningpoint" target="_blank">
+                    <img alt="Android app on Google Play" src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3>World Beer Tour [Dydro]</h3>
+            <img src="/images/wbt-logo.png">
+            <p>
+                Tired of keeping track of those stupid paper receipts from Old Chicago? This app will track your progress
+                in the World Beer Tour and allow you to rate different beers, track mini tours, and get an overview of your
+                rewards from Old Chicago.
+            </p>
+            <p>
+                I developed the Android application, and worked heavily on the data collection and web service creation.
+            </p>
+            <div class="clear"></div>
+            <div class="store-links">
+                <a href="http://play.google.com/store/apps/details?id=com.dydro.wbt" target="_blank">
+                    <img alt="Android app on Google Play" src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                </a>
+                <a href="https://itunes.apple.com/us/app/world-beer-tour/id492036994" target="_blank">
+                    <img alt="iOS app on App Store" src="/images/app-store-badge.svg" />
+                </a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -8,6 +8,7 @@
         <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
 
         <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="/css/fc-webicons.css" rel="stylesheet" type="text/css" />
         <link href="/css/main.css" rel="stylesheet" type="text/css" />
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -20,7 +21,7 @@
                 <div id="links-container">
                     <ul id="main-links">
                         <li {% if app.request_uri is sameas('/') %}class="active"{% endif %}>
-                            <a href="/">Home</a>
+                            <a href="/">About Me</a>
                         </li>
                         <li {% if app.request_uri is sameas('/blog/') %}class="active"{% endif %}>
                             <a href="/blog/">Blog</a>
@@ -31,16 +32,45 @@
                         <li {% if app.request_uri is sameas('/resume/') %}class="active"{% endif %}>
                             <a href="/resume/">Resume</a>
                         </li>
-                        <li {% if app.request_uri is sameas('/contact/') %}class="active"{% endif %}>
-                            <a href="/contact/">Contact</a>
-                        </li>
                     </ul>
                 </div>
                 <div id="main-content-wrapper">
                     {% block content %}{% endblock %}
                 </div>
             </div>
-            <div id="module-wrapper"></div>
+            <div id="module-wrapper">
+                <div id="lifestream-container">
+                    <h2>Find me</h2>
+                    <div id="lifestream-logo-wrapper" class="no-svg">
+                        <p>
+                            <a href="http://facebook.com/troymccabe" class="fc-webicon facebook" target="_blank">Facebook</a>
+                            <a href="http://twitter.com/troymccabe" class="fc-webicon twitter" target="_blank">Twitter</a>
+                            <a href="http://gplus.to/troymccabe" class="fc-webicon googleplus" target="_blank">Google Plus</a>
+                            <a href="http://gplus.to/troymccabe" class="fc-webicon linkedin" target="_blank">LinkedIn</a>
+                            <a href="http://github.com/troymccabe" class="fc-webicon github" target="_blank">Github</a>
+                            <a href="http://rdio.com/people/troymccabe" class="fc-webicon rdio" target="_blank">Rdio</a>
+                            <a href="http://untappd.com/user/troymccabe" class="fc-webicon untappd" target="_blank">Untappd</a>
+                        </p>
+                        <p style="display: none;">
+                            <input type="checkbox" name="facebook" />
+                            <input type="checkbox" name="twitter" />
+                            <input type="checkbox" name="googleplus" />
+                            <input type="checkbox" name="linkedin" />
+                            <input type="checkbox" name="github" />
+                            <input type="checkbox" name="rdio" />
+                            <input type="checkbox" name="rss" />
+                        </p>
+                    </div>
+                    <div id="lifestream-placeholder" style="display: none;">No events</div>
+                </div>
+                <div id="professional-container">
+                    <h2>Jobs</h2>
+                    <div>
+                        <a href="http://geeksquad.com" target="_blank"><img src="/images/geeksquad-logo.png" /></a>
+                        <a href="http://dydro.com" target="_blank"><img src="/images/dydro-logo.png" /></a>
+                    </div>
+                </div>
+            </div>
             <div class="clear"></div>
             <div id="footer">
 
