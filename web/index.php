@@ -31,6 +31,10 @@ $app->get('/projects/', function() use ($app) {
     return $app['twig']->render('projects.twig');
 });
 
+$app->get('/projects/eq_reps/', function() use ($app) {
+    return $app['twig']->render('eq_reps.twig');
+});
+
 $app->get('/resume/', function() use ($app) {
     return $app['twig']->render('resume.twig');
 });
