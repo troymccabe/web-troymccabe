@@ -41,6 +41,10 @@ $app->get('/projects/eq_reps/', function() use ($app) {
 $app->get('/resume/', function() use ($app) {
     return $app['twig']->render('resume.twig');
 });
+
+$app->get('/srvtest/', function() {
+    die(var_dump($_SERVER));
+});
 /*
  * /GET Routes
  */
