@@ -9,6 +9,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/../views',
 ));
 
+$app->register(new Silex\Provider\HttpCacheServiceProvider(), array(
+    'http_cache.cache_dir' => __DIR__.'/cache/',
+));
+
 $app['request_uri'] = $_SERVER['REQUEST_URI'];
 
 
