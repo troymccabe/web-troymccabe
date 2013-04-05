@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../config.php';
 
 $app = new Silex\Application();
 
@@ -10,8 +9,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 $app['request_uri'] = $_SERVER['REQUEST_URI'];
 
-$pdo = new PDO("mysql:dbname={$_config['mysql']['db']};host={$_config['mysql']['host']}",
-    $_config['mysql']['user'], $_config['mysql']['pass']);
 
 /*
  * GET Routes
