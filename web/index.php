@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-ini_set('display_errors', 'on');
-
 $app = new Silex\Application();
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -41,13 +39,9 @@ $app->get('/projects/eq_reps/', function() use ($app) {
 $app->get('/resume/', function() use ($app) {
     return $app['twig']->render('resume.twig');
 });
-
-$app->get('/srvtest/', function() {
-    die(var_dump($_SERVER));
-});
 /*
  * /GET Routes
  */
 
 
-$app->run();
+$app['http_cache']->run();
