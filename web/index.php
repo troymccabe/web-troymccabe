@@ -43,5 +43,4 @@ $app->get('/resume/', function() use ($app) {
  * /GET Routes
  */
 
-
 $app['http_cache']->run();
