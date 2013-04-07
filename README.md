@@ -1,2 +1,2 @@
 # Personal site
-More docs coming
+A simple Silex application for my personal site.
